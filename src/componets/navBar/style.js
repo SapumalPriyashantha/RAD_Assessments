@@ -1,6 +1,6 @@
 export const styleSheet = {
-    navlinks: {
-        // marginLeft: theme.spacing(10),
+    navLinks: {
+        marginLeft: "10px",
         display: "flex",
     },
     logo: {
@@ -11,7 +11,7 @@ export const styleSheet = {
         textDecoration: "none",
         color: "white",
         fontSize: "20px",
-        // marginLeft: theme.spacing(20),
+        marginLeft: "10px",
         "&:hover": {
             color: "yellow",
             borderBottom: "1px solid white",

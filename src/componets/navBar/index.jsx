@@ -2,10 +2,14 @@ import React, { Component } from "react";
 import {styleSheet} from "./style.js";
 import { withStyles } from "@mui/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Link from "@mui/material/Link";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
+import BasicCard from "../../pages/home";
+import {Routes} from "react-router";
+import {Route} from "react-router-dom";
+import Link from '@mui/material/Link';
+import Box from '@mui/material/Box';
 
 class NavBar extends Component{
     constructor(props) {
@@ -21,20 +25,11 @@ class NavBar extends Component{
                     <Typography variant="h4" className={classes.logo}>
                         Dashboard
                     </Typography>
-                  {/*  <div className={classes.navlinks}>
-                        <Link to="/" className={classes.link}>
-                            Home
-                        </Link>
-                        <Link to="/about" className={classes.link}>
-                            About
-                        </Link>
-                        <Link to="/contact" className={classes.link}>
-                            Contact
-                        </Link>
-                        <Link to="/faq" className={classes.link}>
-                            FAQ
-                        </Link>
-                    </div>*/}
+                    <div className={classes.navLinks}>
+                        <Box sx={{ typography: 'body1' }}>
+                            <Link href="/home" className={classes.link} >Link</Link>
+                        </Box>
+                    </div>
                 </Toolbar>
             </AppBar>
         )
