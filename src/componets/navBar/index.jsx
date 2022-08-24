@@ -19,15 +19,25 @@ class NavBar extends Component{
     render() {
         const { classes } = this.props;
         return(
-            <AppBar position="static">
+            <AppBar position="fixed">
                 <CssBaseline />
                 <Toolbar>
                     <Typography variant="h4" className={classes.logo}>
                         Dashboard
                     </Typography>
                     <div className={classes.navLinks}>
-                        <Box sx={{ typography: 'body1' }}>
-                            <Link href="/home" className={classes.link} >Link</Link>
+                        <Box>
+                            <Link href="/home" className={classes.link}  >Home</Link>
+                        </Box>
+                    </div>
+                    <div className={classes.navLinks}>
+                        <Box>
+                            <Link href="/customer" className={classes.link}  >Customer</Link>
+                        </Box>
+                    </div>
+                    <div className={classes.navLinks}>
+                        <Box>
+                            <Link href="/item" className={classes.link}  >Item</Link>
                         </Box>
                     </div>
                 </Toolbar>

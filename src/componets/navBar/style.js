@@ -12,6 +12,8 @@ export const styleSheet = {
         color: "white",
         fontSize: "20px",
         marginLeft: "10px",
+        position: "relative",
+        right: "130px",
         "&:hover": {
             color: "yellow",
             borderBottom: "1px solid white",
