@@ -25,17 +25,6 @@ function App() {
               </Routes>
           </div>
       </Router>
-/*
-    <Router>
-        <div>
-           <NavBar/>
-        </div>
-            {/!* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. *!/}
-            <Switch>
-                <Route path='/home' element={<BasicCard/>}/>
-            </Switch>
-    </Router>*/
   );
 }
 
